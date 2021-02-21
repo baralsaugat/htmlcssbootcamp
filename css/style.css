@@ -1,0 +1,29 @@
+
+        p{
+            color: orange;
+        }
+#user {
+    background: black;
+    color: green;
+}
+
+.user-info {
+    font: size 20px;
+}
+
+div p{
+    background: blue;
+    color: white;
+}
+
+div > p{
+    color: red;
+}
+
+div + p{
+    color: aqua;
+}
+
+div~p{
+    color: black;
+}

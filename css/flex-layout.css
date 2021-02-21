@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.container{
+    width: 85%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* flex-direction: column; */
+
+}
+
+
+.navbar{
+    background: #ed553b;
+
+}
+nav{
+
+    background:#ed553b;
+    margin-left: auto;
+    margin-top: auto;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.info{
+    background: yellow;
+    color: blue;
+    margin-right: 1px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* li{
+    background: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3px;
+} */
+
+a{
+    background: violet;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul li{
+    margin-right: 0.7rem;
+
+}
+
+
+/* body style */
+main{
+    min-height: 80vh;
+    padding: 5rem;
+}
+
+
+.main-page-content{
+    display: flex;
+
+}
+.article-list-item{
+    display: flex;
+    flex-direction: row;
+    background: lightcyan;
+    border: black solid 0.5px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-radius: 3%;
+    
+}
+aside{
+    background: chartreuse;
+    width: 30%;
+    min-height: 500;
+    padding: 15px;
+    margin-left: 5px;
+    border: black solid;
+    border-radius: 2%;
+}
+/* .menu1{
+    display: flex;
+    flex-direction: column;
+
+} */
+/* .sidebar{
+    display: flex;
+    flex-direction: row;
+    background: chartreuse;
+} */
+
+.thumbnail{
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+
+h1{
+    color: yellowgreen;
+}
+/* footer starts */
+
+footer{
+    background: black;
+    color: white;
+    padding: 10px;
+    
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+/* ;media query */
+@media(max-width:768px){
+    .main-page-content{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        background: chartreuse;
+        width: 100%;
+        min-height: 500;
+        padding: 15px;
+        margin-left: 5px;
+        border: black solid;
+        border-radius: 2%;
+    }
+    .article-list-item{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .thumbnail{
+        width: 100%;
+    }
+}
