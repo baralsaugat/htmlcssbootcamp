@@ -1,0 +1,145 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+.wrapper{
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "title title title"
+    "banner banner offer1"
+    "banner banner offer2"
+    "side-menu  main main "
+    "recent main main"
+    "tags main main"
+    "footer footer footer";
+
+
+}
+
+
+
+.header{
+    background-color: #000;
+    color: white;
+    grid-area: header;
+
+}
+
+.title{
+    background-color: aquamarine;
+    grid-area: title
+    ;
+} 
+.main-banner{
+    background-color: yellow;
+    grid-area: banner;
+} 
+.offer1{
+    background-color: yellowgreen;
+    grid-area: offer1;
+} 
+.oofer2{
+    background-color: pink ;
+    grid-area: offer2;
+} 
+.side-menu{
+    background-color: blueviolet;
+    grid-area: side-menu;
+
+} 
+.tags{
+    background-color: skyblue;
+    grid-area: tags;
+    
+} 
+.recent{
+    background-color: red;
+    grid-area: recent;
+} 
+.main{
+    background-color:maroon;
+    grid-area: main;
+} 
+
+
+.product{
+    background: chocolate;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 10px;
+    flex-grow: 1;
+
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: cornsilk;
+}
+/* .{
+    background-color: aquamarine;
+}  */
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.wrapper> *{
+    padding: 1rem;
+    font-size: 24px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* media query */
+
+@media(max-width: 768px){
+    .wrapper {
+        display: grid;
+        gap: 0rem;
+        grid-template-columns:1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "title  title "
+        "banner  banner"
+        "offer1 offer2"
+        "main main"
+        
+        "side-menu side-menu"
+        
+        "recent  tags"
+        
+        " footer footer";
+    
+    
+    }
+    
+}
+
+@media(max-width: 576px){
+    .wrapper{
+        display: grid;
+        gap: 0.3rem;
+        grid-template-columns:auto;
+        grid-template-areas: 
+        "header"
+        "title "
+        "banner "
+        "offer1"
+        "offer2"
+        "side-menu"
+        " main "
+        "recent "
+        "tags "
+        " footer";
+    
+    
+    }
+    
+}
