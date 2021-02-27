@@ -1,0 +1,103 @@
+body{
+    box-sizing: border-box;
+    background: pink;
+    margin: 0;
+}
+
+.image1{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.image2, .image3 {
+    height:40vh;
+}
+
+
+.hero{
+    background: black;
+    color: white;
+    max-width: 60%;
+    padding: 50px;
+    opacity: 70%;
+    
+    
+
+}
+
+.hero h1{
+    margin-bottom: 2rem;
+}
+
+.image2{
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image3{
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 2rem;
+    color: rebeccapurple;
+
+}
+
+.down-arrow{
+    font-size: 3rem;
+    color: white;
+    transform: rotate(90deg);
+    font-size: 100px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 100px;
+
+    animation: bounce 1000ms infinite;
+
+
+}
+
+@keyframes bounce{
+    0%{
+        bottom: 100px;
+
+    }
+    100%{
+        bottom: 10px;
+        color: grey;
+        opacity: 0.4;
+
+    }
+}
+
+
+.title{
+    background: #000;
+    font-size: 3rem;
+    color: white;
+    opacity: 60%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.image3, .image1, .image2{
+    background-attachment: fixed;
+}
