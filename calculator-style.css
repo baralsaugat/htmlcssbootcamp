@@ -14,7 +14,7 @@ body{
     
     ;
     background: rgb(177, 169, 149);
-    width: 146px;
+    width: 165px;
 
     height: 170px;
     padding: 8px;
@@ -24,7 +24,7 @@ body{
     background: darkgoldenrod;
 } */
 
-.screen{
+.result{
     display: grid;
     background: cornsilk;
     /* gap: 0; */
