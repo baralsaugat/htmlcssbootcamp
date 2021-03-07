@@ -44,11 +44,8 @@
 
         buttons.forEach(btn=>{
             btn.addEventListener("click", ()=>{
-                if (btn.innerText==="off"){
-                    document.getElementById("result").style.backgroundColor = "black";
-                    btn.innerText = "ON"
-                    return textToDisplay = "";
 
+               
                 if(btn.innerText==="="){
                     return onTotal();
                 }
@@ -64,10 +61,10 @@
                     return display(textToDisplay);
                 }
 
-                // if (btn.innerText==="off"){
-                //     document.getElementById("result").style.backgroundColor = "black";
-                //     btn.innerText = "ON"
-                //     return textToDisplay = "";
+                if (btn.innerText==="off"){
+                    document.getElementById("result").style.backgroundColor = "black";
+                    btn.innerText = "ON"
+                    return textToDisplay = "";
                 }
                 if (btn.innerText==="ON"){
                     document.getElementById("result").style.backgroundColor = "";
@@ -92,13 +89,13 @@
 
         const onTotal = () => {
             const subTotal = eval(textToDisplay);
-            const total = subTotal +randomVar();
+            const total = subTotal + getrandomVar();
             display(total);
             textToDisplay = "";
         }
 
 
-        const randomVar= () => {
+        const getrandomVar= () => {
             const randomVar = Math.floor(Math.random() * 10)
             +1;       
             console.log(randomVar);
